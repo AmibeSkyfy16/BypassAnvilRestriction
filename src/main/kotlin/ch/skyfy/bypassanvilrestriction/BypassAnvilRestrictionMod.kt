@@ -1,8 +1,8 @@
 package ch.skyfy.bypassanvilrestriction
 
 import ch.skyfy.bypassanvilrestriction.config.Configs
-import ch.skyfy.bypassanvilrestriction.config.api.ConfigLoader
 import ch.skyfy.bypassanvilrestriction.utils.setupConfigDirectory
+import ch.skyfy.tomlconfiglib.ConfigManager
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.loader.api.FabricLoader
 import org.apache.logging.log4j.LogManager
@@ -20,7 +20,7 @@ class BypassAnvilRestrictionMod : ModInitializer {
 
     init {
         setupConfigDirectory()
-        ConfigLoader.loadConfigs(arrayOf(Configs.javaClass))
+        ConfigManager.loadConfigs(arrayOf(Configs.javaClass))
     }
 
     override fun onInitialize() {

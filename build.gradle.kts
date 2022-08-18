@@ -51,8 +51,8 @@ base {
 
 repositories {
     mavenCentral()
-    mavenLocal()
-    maven("https://repo.repsy.io/mvn/amibeskyfy16/repo") // Use for my JsonConfig lib
+//    mavenLocal()
+    maven("https://repo.repsy.io/mvn/amibeskyfy16/repo")
 }
 
 dependencies {
@@ -63,12 +63,7 @@ dependencies {
     modImplementation("net.fabricmc.fabric-api:fabric-api:${properties["fabric_version"]}")
     modImplementation("net.fabricmc:fabric-language-kotlin:${properties["fabric_kotlin_version"]}")
 
-    transitiveInclude(implementation("com.akuleshov7:ktoml-core:0.2.13")!!)
-    transitiveInclude(implementation("com.akuleshov7:ktoml-file:0.2.13")!!)
-    transitiveInclude(implementation("net.peanuuutz:tomlkt:0.1.7")!!)
-    transitiveInclude(implementation("org.jetbrains.kotlinx:kotlinx-serialization-hocon:1.4.0-RC")!!)
-    transitiveInclude(implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.6.4")!!)
-//    transitiveInclude(implementation("ch.skyfy.jsonconfig:json-config:2.1.4")!!)
+    transitiveInclude(implementation("ch.skyfy.tomlconfiglib:toml-config-lib:1.0.0")!!)
 
     handleIncludes(project, transitiveInclude)
 
