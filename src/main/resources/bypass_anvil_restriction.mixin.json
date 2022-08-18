@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "ch.skyfy.bypassanvilrestriction.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "AnvilContainerMixin"
+  ],
+  "server": [],
+  "client": [
+    "AnvilScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

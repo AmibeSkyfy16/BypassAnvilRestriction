@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "bypass_anvil_restriction",
+  "version": "${version}",
+  "name": "Bypass Anvil Restriction",
+  "description": "This mod allow player to bypass the restriction from the anvil",
+  "authors": ["Skyfy16"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/bypass_anvil_restriction/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "ch.skyfy.bypassanvilrestriction.BypassAnvilRestrictionMod"
+      }
+    ]
+  },
+  "mixins": ["bypass_anvil_restriction.mixin.json"],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2",
+    "fabric-language-kotlin": ">=1.8.2+kotlin.1.7.10"
+  }
+}
