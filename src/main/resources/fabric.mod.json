@@ -19,9 +19,9 @@
   },
   "mixins": ["bypass_anvil_restriction.mixin.json"],
   "depends": {
-    "fabricloader": ">=0.14.9",
+    "fabricloader": ">=0.14.12",
     "fabric": "*",
     "minecraft": "1.19.2",
-    "fabric-language-kotlin": ">=1.8.2+kotlin.1.7.10"
+    "fabric-language-kotlin": ">=1.9.0+kotlin.1.8.0"
   }
 }

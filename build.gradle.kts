@@ -37,9 +37,9 @@ fun DependencyHandlerScope.handleIncludes(project: Project, configuration: Confi
 }
 
 plugins {
-    id("fabric-loom") version "0.12-SNAPSHOT"
-    id("org.jetbrains.kotlin.jvm") version "1.7.10"
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.7.10"
+    id("fabric-loom") version "1.0-SNAPSHOT"
+    id("org.jetbrains.kotlin.jvm") version "1.8.0"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.8.0"
     idea
 }
 
@@ -51,7 +51,6 @@ base {
 
 repositories {
     mavenCentral()
-//    mavenLocal()
     maven("https://repo.repsy.io/mvn/amibeskyfy16/repo")
 }
 
@@ -63,11 +62,11 @@ dependencies {
     modImplementation("net.fabricmc.fabric-api:fabric-api:${properties["fabric_version"]}")
     modImplementation("net.fabricmc:fabric-language-kotlin:${properties["fabric_kotlin_version"]}")
 
-    transitiveInclude(implementation("ch.skyfy.tomlconfiglib:toml-config-lib:1.0.0")!!)
+    transitiveInclude(implementation("ch.skyfy.tomlconfiglib:toml-config-lib:1.0.2")!!)
 
     handleIncludes(project, transitiveInclude)
 
-    testImplementation("org.jetbrains.kotlin:kotlin-test:1.7.10")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.8.0")
 }
 
 tasks {
@@ -87,8 +86,8 @@ tasks {
     }
 
     named<Wrapper>("wrapper") {
-        gradleVersion = "7.5.1"
-        distributionType = Wrapper.DistributionType.ALL
+        gradleVersion = "7.6"
+        distributionType = Wrapper.DistributionType.BIN
     }
 
     named<KotlinCompile>("compileKotlin") {
