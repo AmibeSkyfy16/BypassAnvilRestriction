@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="dark" transform="matrix(1.39088,0,0,5.51443,-2.63022,6.22269)">
+        <rect x="1.891" y="-1.128" width="575.177" height="816.041" style="fill:rgb(13,17,23);"/>
+    </g>
+    <g transform="matrix(1,0,0,1,-2.89102e-13,-13.0645)">
+        <text x="40px" y="329.892px" style="font-family:'FiraCode-Medium', 'Fira Code';font-weight:500;font-size:14px;fill:rgb(4,216,4);">Works server side without having the mod on the client</text>
+        <g transform="matrix(14,0,0,14,220.923,355.892)">
+        </g>
+        <text x="40px" y="355.892px" style="font-family:'FiraCode-Medium', 'Fira Code';font-weight:500;font-size:14px;fill:rgb(4,216,4);">Works in singleplayer</text>
+    </g>
+    <g id="Description" transform="matrix(0.984482,0,0,2.28157,1.30322,-750.068)">
+        <g transform="matrix(1.01576,0,0,0.438295,-87.1017,348.298)">
+            <text x="124.447px" y="192.228px" style="font-family:'FiraCode-Medium', 'Fira Code';font-weight:500;font-size:14px;fill:rgb(25,124,250);">With this mod, entities that will die by the entity cramming rule will drop</text>
+            <g transform="matrix(14,0,0,14,675.831,206.254)">
+            </g>
+            <text x="124.447px" y="206.254px" style="font-family:'FiraCode-Medium', 'Fira Code';font-weight:500;font-size:14px;fill:rgb(25,124,250);">experience orbs (the same amount as if a player had killed them)</text>
+        </g>
+        <g transform="matrix(1.01576,0,0,0.438295,-51.0118,319.638)">
+            <g transform="matrix(30,0,0,30,291.994,203.562)">
+            </g>
+            <text x="88.917px" y="203.562px" style="font-family:'FiraCode-Medium', 'Fira Code';font-weight:500;font-size:30px;fill:rgb(25,83,250);">Description</text>
+        </g>
+    </g>
+    <g transform="matrix(1,0,0,1,-33.6857,-91.1118)">
+        <g id="Title" transform="matrix(36,0,0,36,688.455,154.792)">
+        </g>
+        <text x="178.917px" y="154.792px" style="font-family:'FiraCode-SemiBold', 'Fira Code';font-weight:600;font-size:36px;fill:rgb(25,83,250);">Entity Cramming Drop XP</text>
+    </g>
+</svg>
