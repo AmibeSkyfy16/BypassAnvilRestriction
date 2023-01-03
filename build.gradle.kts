@@ -81,9 +81,7 @@ tasks {
         }
     }
 
-    java {
-        withSourcesJar()
-    }
+    java { withSourcesJar() }
 
     named<Wrapper>("wrapper") {
         gradleVersion = "7.6"
