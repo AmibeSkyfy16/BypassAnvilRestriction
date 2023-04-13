@@ -3,3 +3,5 @@
 /build/
 /run/
 /.idea/
+/preconfiguration/doneclient.txt
+/preconfiguration/doneserver.txt
