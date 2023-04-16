@@ -11,6 +11,6 @@ ___
 </p>
 
 <div align="center">
-    <a href="coindrop.to/AmibeSkyfy16"> <img style="vertical-align:middle" width="200" src="./docs/coindrop.svg"> </a>
+    <a href="https://coindrop.to/amibeskyfy16"> <img style="vertical-align:middle" width="200" src="./docs/coindrop.svg"> </a>
     <a href="https://ko-fi.com/amibeskyfy16"> <img style="vertical-align:middle" width="200" src="./docs/KoFi.svg"> </a>
 </div>
