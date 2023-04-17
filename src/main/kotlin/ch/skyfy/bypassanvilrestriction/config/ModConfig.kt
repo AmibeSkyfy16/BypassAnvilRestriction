@@ -23,6 +23,7 @@ data class ModConfig(
     val nerfIncrementalCostByPercent: Int,
 ) : Validatable {
     override fun validateImpl(errors: MutableList<String>) {
+        errors.add("[ERRRROR] TEST")
         if (nerfIncrementalCostByPercent < 0 || nerfIncrementalCostByPercent > 100)
             errors.add("[ERROR] $MOD_ID -> config.toml -> nerfIncrementalCostByPercent must contains a value between 0 and 100 (inclusive) ! Current value is $nerfIncrementalCostByPercent")
     }
