@@ -3,7 +3,7 @@
 val transitiveInclude: Configuration by configurations.creating
 
 plugins {
-    id("fabric-loom") version "1.1-SNAPSHOT"
+    id("fabric-loom") version "1.3-SNAPSHOT"
     id("org.jetbrains.kotlin.jvm") version "1.8.22"
     id("org.jetbrains.kotlin.plugin.serialization") version "1.8.22"
     idea
