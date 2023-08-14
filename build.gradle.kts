@@ -28,7 +28,7 @@ dependencies {
     modImplementation("net.fabricmc.fabric-api:fabric-api:${properties["fabric_version"]}")
     modImplementation("net.fabricmc:fabric-language-kotlin:${properties["fabric_kotlin_version"]}")
 
-    transitiveInclude(implementation("ch.skyfy.tomlconfiglib:toml-config-lib:1.0.3")!!)
+    transitiveInclude(implementation("ch.skyfy.tomlconfiglib:toml-config-lib:1.0.4")!!)
 
     handleIncludes(project, transitiveInclude)
 

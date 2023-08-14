@@ -14,7 +14,6 @@ import net.minecraft.server.command.CommandManager
 import net.minecraft.server.command.ServerCommandSource
 import net.minecraft.text.Text
 import java.util.concurrent.CompletableFuture
-import java.util.function.Supplier
 
 class ReloadFilesCmd : Command<ServerCommandSource> {
 
@@ -31,9 +30,7 @@ class ReloadFilesCmd : Command<ServerCommandSource> {
 
         @Suppress("UNUSED_PARAMETER")
         private fun <S : ServerCommandSource> getConfigFiles(commandContext: CommandContext<S>, suggestionsBuilder: SuggestionsBuilder): CompletableFuture<Suggestions> {
-            val list = mutableListOf<String>()
-            list.add(Configs.MOD_CONFIG.relativeFilePath.fileName.toString())
-            return CommandSource.suggestMatching(list, suggestionsBuilder)
+            return CommandSource.suggestMatching(listOf(Configs.MOD_CONFIG.relativeFilePath.fileName.toString()), suggestionsBuilder)
         }
     }
 
@@ -46,10 +43,10 @@ class ReloadFilesCmd : Command<ServerCommandSource> {
         }
 
         if (list.contains(false)) {
-            context.source.sendFeedback(Supplier { Text.literal("Configuration could not be reloaded") }, false)
+            context.source.sendFeedback({ Text.literal("Configuration could not be reloaded") }, false)
             BypassAnvilRestrictionMod.LOGGER.warn("Configuration could not be reloaded")
         } else {
-            context.source.sendFeedback(Supplier { Text.literal("The configuration was successfully reloaded") }, false)
+            context.source.sendFeedback({ Text.literal("The configuration was successfully reloaded") }, false)
             BypassAnvilRestrictionMod.LOGGER.info("The configuration was successfully reloaded")
         }
 
