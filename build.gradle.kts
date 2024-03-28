@@ -3,9 +3,9 @@
 val transitiveInclude: Configuration by configurations.creating
 
 plugins {
-    id("fabric-loom") version "1.3-SNAPSHOT"
-    id("org.jetbrains.kotlin.jvm") version "1.8.22"
-    id("org.jetbrains.kotlin.plugin.serialization") version "1.8.22"
+    id("fabric-loom") version "1.5-SNAPSHOT"
+    id("org.jetbrains.kotlin.jvm") version "1.9.23"
+    id("org.jetbrains.kotlin.plugin.serialization") version "1.9.23"
     idea
 }
 
@@ -28,11 +28,11 @@ dependencies {
     modImplementation("net.fabricmc.fabric-api:fabric-api:${properties["fabric_version"]}")
     modImplementation("net.fabricmc:fabric-language-kotlin:${properties["fabric_kotlin_version"]}")
 
-    transitiveInclude(implementation("ch.skyfy.tomlconfiglib:toml-config-lib:1.0.4")!!)
+    transitiveInclude(implementation("ch.skyfy.tomlconfiglib:toml-config-lib:1.0.5")!!)
 
     handleIncludes(project, transitiveInclude)
 
-    testImplementation("org.jetbrains.kotlin:kotlin-test:1.8.22")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.9.23")
 }
 
 tasks {
@@ -124,7 +124,7 @@ tasks {
     }
 
     named<Wrapper>("wrapper") {
-        gradleVersion = "8.2.1"
+        gradleVersion = "8.7"
         distributionType = Wrapper.DistributionType.BIN
     }
 
